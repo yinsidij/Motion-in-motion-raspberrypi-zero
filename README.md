@@ -6,5 +6,20 @@ This repo provides an intro and setup for services running in Raspberry pi zero 
 
 # How it works
 
+# Build
+```
+sodu docker build . -t pi-zero-motion-in-motion-image
+```
+
+# Run
+```
+sudo ./run.sh
+```
+
+# Debug
+```
+sudo docker logs pi-zero-motion-in-motion
+```
+
 # Extensibility
 - Compile your `producer` binary in Docker (https://github.com/yinsidij/raspberrypi-zero-ccloud-producer-docker)
