@@ -6,6 +6,7 @@ This repo provides an intro and setup for services running in Raspberry pi zero 
   - `curl` using AWS S3 restful API to upload video clips
 
 # Design decision
+- Using Docker for faster bootstrap and deployments as IoT devices (i.e. Raspberry pi zero W) would grow
 - Using Kafka client in c for best performance purpose in pi zero
 - Using S3 restful API for easy setup and use
   - AWSCLI2 is only compatible with arm64 but pi zero is arm32
@@ -19,6 +20,14 @@ sodu docker build . -t pi-zero-motion-in-motion-image
 ```
 pi@raspberrypi:~/Motion-in-motion-raspberrypi-zero $ sudo docker image ls | grep motion-in-motion
 pi-zero-motion-in-motion-image   latest    978df2706fa7   40 minutes ago   720MB
+
+```
+
+# Prerequisite
+Make sure raspberry pi supports camera and is connected to camera properly by
+```
+pi@raspberrypi:~/Motion-in-motion-raspberrypi-zero $ vcgencmd get_camera
+supported=1 detected=1, libcamera interfaces=0
 
 ```
 
