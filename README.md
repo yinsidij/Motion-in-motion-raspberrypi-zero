@@ -41,9 +41,9 @@ sudo ./run.sh
 sudo docker logs pi-zero-motion-in-motion
 ```
 
-# Extensibility
+# Related Repos
 - Build your own `producer` binary in Docker (https://github.com/yinsidij/raspberrypi-zero-ccloud-producer-docker)
-- Running `Motion` only in Docker 
+- Running `Motion` only in Docker (https://github.com/yinsidij/raspberrypi-zero-motion-docker)
 
 # Reference
 - https://stackoverflow.com/questions/44751574/uploading-to-amazon-s3-via-curl-route
